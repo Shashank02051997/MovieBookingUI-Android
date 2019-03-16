@@ -5,9 +5,7 @@ This is a concept of fetching a user's cinema show details like venue, movie, da
 
 **Please click the image below to enlarge.**
 
-<img src="https://github.com/Shashank02051997/MovieBookingUI-Android/blob/master/Screenshots/Screenshot_20190316-135417.png" height="600" width="300" hspace="40">
-
-<img src="https://github.com/Shashank02051997/MovieBookingUI-Android/blob/master/Screenshots/Screenshot_20190316-135422.png" height="600" width="300" hspace="40">
+<img src="https://github.com/Shashank02051997/MovieBookingUI-Android/blob/master/Screenshots/Screenshot_20190316-135417.png" height="600" width="300" hspace="40"><img src="https://github.com/Shashank02051997/MovieBookingUI-Android/blob/master/Screenshots/Screenshot_20190316-135422.png" height="600" width="300" hspace="40">
 
 ## Contributing
 
