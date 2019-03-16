@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/strip_bg"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/AppTheme.Toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_keyboard_arrow_left_dark_gray_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginRight="36dp"
+                    android:fontFamily="@font/calibri"
+                    android:text="Select your Show Details to Order F &amp; B"
+                    android:textAlignment="center"
+                    android:textColor="#4e4e50"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_clear_dark_gray_24dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="84dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="-32dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:fontFamily="@font/calibri"
+                            android:text="IMAX: Cinesphere, Mumbai"
+                            android:textAlignment="center"
+                            android:textColor="#7E7E7E"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:src="@drawable/ic_search_gray_24dp" />
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/calibri"
+                    android:text="SELECT A MOVIE"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/light_gray_rounded_border_shape"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/movie_img1" />
+
+                            <TextView
+                                android:layout_width="64dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="World of Warcraft"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/light_gray_rounded_border_shape"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/movie_img2" />
+
+                            <TextView
+                                android:layout_width="64dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="Kong: Skull Island"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/light_gray_rounded_border_shape"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/movie_img3" />
+
+                            <TextView
+                                android:layout_width="64dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="The Lego Batman"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/light_gray_rounded_border_shape"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/movie_img1" />
+
+                            <TextView
+                                android:layout_width="64dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="World of Warcraft"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/light_gray_rounded_border_shape"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/movie_img2" />
+
+                            <TextView
+                                android:layout_width="64dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="Kong: Skull Island"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/light_gray_rounded_border_shape"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/movie_img3" />
+
+                            <TextView
+                                android:layout_width="64dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="The Lego Batman"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/light_gray_rounded_border_shape"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/movie_img1" />
+
+                            <TextView
+                                android:layout_width="64dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="World of Warcraft"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/light_gray_rounded_border_shape"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/movie_img2" />
+
+                            <TextView
+                                android:layout_width="64dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="Kong: Skull Island"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/light_gray_rounded_border_shape"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/movie_img3" />
+
+                            <TextView
+                                android:layout_width="64dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="The Lego Batman"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/calibri"
+                    android:text="SELECT A DATE"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <VideoView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e2e2e2"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="25"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="24sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="TUE"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="26"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="24sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="WED"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/calibri"
+                                android:text="27"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="24sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="THU"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="28"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="24sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="FRI"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="29"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="24sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="SAT"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="30"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="24sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
+                                android:text="SUN"
+                                android:textAlignment="center"
+                                android:textColor="#7E7E7E"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+                <VideoView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#e2e2e2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/calibri"
+                    android:text="SELECT A SHOWTIME"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="11:00 AM"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:background="@drawable/light_gray_rounded_border_shape"
+                        android:layout_weight="33.3"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="1:30 PM"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:background="@drawable/light_gray_rounded_border_shape"
+                        android:layout_weight="33.3"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="04:00 PM"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:background="@drawable/light_gray_rounded_border_shape"
+                        android:layout_weight="33.3"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="11:00 AM"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:background="@drawable/light_gray_rounded_border_shape"
+                        android:layout_weight="33.3"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="1:30 PM"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:background="@drawable/light_gray_rounded_border_shape"
+                        android:layout_weight="33.3"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="04:00 PM"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:background="@drawable/light_gray_rounded_border_shape"
+                        android:layout_weight="33.3"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80D1D1D1" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/calibri"
+            android:text="PROCEED"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
